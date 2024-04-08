@@ -14,5 +14,5 @@ if __name__ == "__main__":
     plt.title("Powercurve")
     plt.xlabel("t / s")
     plt.ylabel("P / W")
-    plt.savefig('figures/sortetpower.png')
+    plt.savefig('figures/powercurve.png')
     plt.show()
