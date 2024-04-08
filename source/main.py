@@ -12,7 +12,12 @@ if __name__ == "__main__":
 
     plt.plot(sorted_power_W[::-1])
     plt.title("Powercurve")
-    plt.xlabel("t / s")
-    plt.ylabel("P / W")
+    plt.xlabel("Time")
+    plt.ylabel("Power")
+    plt.gca().set_yticklabels([f'{int(w)} W' for w in plt.gca().get_yticks()])
+    plt.gca().set_xticklabels([f'{int(w)} s' for w in plt.gca().get_xticks()])
+    plt.grid(True)
+    
     plt.savefig('figures/sortetpower.png')
     plt.show()
+    
