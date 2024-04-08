@@ -10,12 +10,9 @@ if __name__ == "__main__":
     sorted_power_W = bubble_sort(power_W)
     print(sorted_power_W[::-1])     
 
-plt.plot(sorted_power_W[::-1])
-
-# Achsenbeschriftungen hinzufügen
-# Titel hinzufügen
-# plt.title('Einfaches Liniendiagramm')
-
-# Diagramm anzeigen
-plt.savefig('figures/sortetpower.png')
-plt.show()
+    plt.plot(sorted_power_W[::-1])
+    plt.title("Powercurve")
+    plt.xlabel("t / s")
+    plt.ylabel("P / W")
+    plt.savefig('figures/sortetpower.png')
+    plt.show()
