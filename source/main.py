@@ -17,7 +17,6 @@ if __name__ == "__main__":
     plt.gca().set_yticklabels([f'{int(w)} W' for w in plt.gca().get_yticks()])
     plt.gca().set_xticklabels([f'{int(w)} s' for w in plt.gca().get_xticks()])
     plt.grid(True)
-    
     plt.savefig('figures/sortetpower.png')
     plt.show()
     
